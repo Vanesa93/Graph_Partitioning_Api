@@ -1,0 +1,15 @@
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\services\PartitionsService.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\controller\FileUploadController.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\entities\VertexEntity.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\exceptions\StorageFileNotFoundException.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\models\PartitionsInput.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\errors\StorageException.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\controller\GraphController.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\entities\GraphEntity.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\controller\PartitionsController.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\errors\StorageFileNotFoundException.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\exceptions\StorageException.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\models\FileInput.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\services\StorageService.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\services\FileSystemStorageService.java
+D:\SpringWorkspace\GraphPartitioning\src\com\vvgeorgieva\services\GraphService.java

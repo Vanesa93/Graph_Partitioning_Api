@@ -1,0 +1,43 @@
+body {margin:0;}
+
+.navigation {
+  overflow: hidden;
+  background-color:#31708ffc;
+}
+
+.navigation a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navigation a.active {
+  background-color: #d9edf7;
+  color: #31708ffc;
+}
+
+/* footer */
+.footer {
+	padding-bottom: 10px;
+    overflow-x: hidden;
+    color: white;
+    background-color: black;
+    text-align: center;    
+    padding-top: 10px;    
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}

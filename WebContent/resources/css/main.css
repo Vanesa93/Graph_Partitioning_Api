@@ -1,0 +1,131 @@
+body{
+	font-family: "Times New Roman";
+	background-color: #d9edf7;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+.itemsCentered {
+    align-items: center;
+}
+
+.itemsSpaceAround {
+    justify-content: space-around;
+}
+
+/* text */
+.textAlignCenter {
+	text-align:center;
+}
+
+/* padding */
+.pr10{
+	padding-right: 10px;
+}
+
+.pl10{
+	padding-left: 10px;
+}
+
+.pb0{
+	padding-bottom: 0;
+}
+
+.pt5p{
+	padding-top: 5%;
+}
+
+.p5p{
+	padding: 2%;	
+}
+
+#graph {
+    position: relative;
+    background: white;
+    box-sizing: border-box;
+    width: 100%;
+	height: 80%;
+}
+
+.downloadLink {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    padding: 10px 15px;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(53, 77, 94);
+    color: rgb(220, 220, 220);
+    z-index: 999;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+}
+
+		#partition0 {
+		    width: 100%;
+		    height: 80%;
+		  }
+		#partition1 {
+		   width: 100%;
+		   height: 80%;
+		   
+		  }
+		  #graphToPartition {
+		   width: 100%;
+		   height: 80%;
+		   padding:10px;
+		  
+		  }
+		  .sigma-scene, .sigma-labels, .sigma-mouse {
+		    left: 10;
+		}
+		
+.p4p{
+	padding:4%;
+}
+
+.rowContainer{
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-radius: 1%;
+    border-color: #31708ffc;
+    background-color:white;
+    padding-bottom: 10px;
+}
+
+.colRowContainer{
+	border: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-width: 1px;
+    border-color: #31708ffc
+}
+
+input[type=file]{
+	display: inline;
+    padding-bottom: 20px;
+    margin-left: 80px;
+    outline: none;
+}
+
+input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus{
+	outline: none;
+}
+
+label.error {
+    display:inline-block;
+    width:100%;
+    color: red;
+}
+
+.partitionsRowBorder{
+	border-top: 0px;
+    border-left: 0px;
+}
+
