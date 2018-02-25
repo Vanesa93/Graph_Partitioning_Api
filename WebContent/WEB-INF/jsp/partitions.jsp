@@ -12,7 +12,7 @@
 					<h4 style="text-align:center;margin-bottom:20px;font-size:25px;">Graph</h4>	
 					<div style="width:100%;padding-left:20px;">					
 						<div id="graph">
-							<a class='downloadLink' id='download-link' href='#' download='graph.png'>Download Image</a>	
+							<a class='downloadLink' id='download-link'>Download Image</a>	
 						</div>						
 					</div>
 				</div>
@@ -22,7 +22,7 @@
 					<h4 style="text-align:center;margin-bottom:20px;font-size:25px;">Partition 1</h4>						
 					<div style="width:100%;padding-left:20px;">					
 						<div id="partition0">
-							<a class='downloadLink' id='download-link-partition-1' href='#' download='graph.png'>Download image</a>	
+							<a class='downloadLink' id='download-link-partition-1' >Download image</a>	
 						</div>
 					</div>
 				</div>
@@ -30,7 +30,7 @@
 					<h4 style="text-align:center;margin-bottom:20px;font-size:25px;">Partition 2</h4>	
 					<div style="width:100%;padding-left:20px;">
 						<div id="partition1">
-							<a class='downloadLink' id='download-link-partition-2' href='#' download='graph.png'>Download image</a>	
+							<a class='downloadLink' id='download-link-partition-2'>Download image</a>	
 						</div>
 					</div>
 				</div>
@@ -62,35 +62,44 @@
 					    }
 			});
 			
-			setTimeout(function () {
-				 sigma.renderers.def = sigma.renderers.canvas;
-				 var sigmaInstance = sigma.instances()[0];
-				 sigmaInstance.refresh();
-				 var downloadLink = document.getElementById('download-link');
-				 downloadLink.addEventListener('click', function (event) {
-				     downloadLink.setAttribute('href', sigmaInstance.renderers[0].domElements.scene.toDataURL());
-				 });
-				}, 1000);
-			
-			setTimeout(function () {
-				 sigma.renderers.def = sigma.renderers.canvas;
-				 var sigmaInstance = sigma.instances()[1];
-				 sigmaInstance.refresh();
-				 var downloadLink = document.getElementById('download-link-partition-1');
-				 downloadLink.addEventListener('click', function (event) {
-				     downloadLink.setAttribute('href', sigmaInstance.renderers[0].domElements.scene.toDataURL());
-				 });
-				}, 1000);
-			
-			setTimeout(function () {
+			 $("#download-link").click(function() {
 				 sigma.renderers.def = sigma.renderers.canvas;
 				 var sigmaInstance = sigma.instances()[2];
 				 sigmaInstance.refresh();
-				 var downloadLink = document.getElementById('download-link-partition-2');
-				 downloadLink.addEventListener('click', function (event) {
-				     downloadLink.setAttribute('href', sigmaInstance.renderers[0].domElements.scene.toDataURL());
+				 sigmaInstance.renderers[0].snapshot({
+					  format: 'png',
+					  background: 'white',
+					  labels: false,
+					  download: true,
+					  filename: 'graph',
+					});
 				 });
-				}, 1000);
+			 $("#download-link-partition-1").click(function() {
+				 sigma.renderers.def = sigma.renderers.canvas;
+				 var sigmaInstance = sigma.instances()[0];
+				 sigmaInstance.refresh();
+				 sigmaInstance.renderers[0].snapshot({
+					  format: 'png',
+					  background: 'white',
+					  labels: false,
+					  download: true,
+					  filename: 'partition1',
+					});
+				 });
+			 $("#download-link-partition-2").click(function() {
+				 sigma.renderers.def = sigma.renderers.canvas;
+				 var sigmaInstance = sigma.instances()[1];
+				 sigmaInstance.refresh();
+				 sigmaInstance.renderers[0].snapshot({
+					  format: 'png',
+					  background: 'white',
+					  labels: false,
+					  download: true,
+					  filename: 'partition2',
+					});
+				 });			 
+			
+			
 		});
 	</script>
     </jsp:body>

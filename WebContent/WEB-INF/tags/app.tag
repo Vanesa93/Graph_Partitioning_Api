@@ -15,6 +15,8 @@
 	<script src="resources/js/jquery-3.2.1.min.js"></script>
 	<script src="resources/js/sigma.min.js"></script>
 	<script src="resources/js/sigma.parsers.json.min.js"></script>
+	<script src="resources/js/sigma.renderers.snapshot.js"></script>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 	
     <div id="pageheader">
