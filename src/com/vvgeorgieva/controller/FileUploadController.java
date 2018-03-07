@@ -34,7 +34,7 @@ import com.vvgeorgieva.services.FileSystemStorageService;
 import com.vvgeorgieva.services.GraphService;
 
 import entity.Graph;
-import helpers.ProcessFile;
+import helpers.ProcessFileService;
 import javafx.scene.shape.Path;
 
 @Controller

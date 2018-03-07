@@ -21,7 +21,7 @@ import com.vvgeorgieva.errors.StorageFileNotFoundException;
 import entity.Graph;
 import entity.VertexGroup;
 import evolutionary_approach.EvolutionaryApproach;
-import helpers.ProcessFile;
+import helpers.ProcessFileService;
 @Service
 public class FileSystemStorageService implements StorageService {
 

@@ -22,8 +22,8 @@ import com.vvgeorgieva.errors.StorageFileNotFoundException;
 import entity.Graph;
 import entity.VertexGroup;
 import evolutionary_approach.EvolutionaryApproach;
-import helpers.ProcessFile;
-import jsonConverter.ObjectToJson;
+import helpers.ProcessFileService;
+import jsonConverter.ObjectToJsonService;
 @Service
 public class GraphService implements StorageService {
 
@@ -45,14 +45,14 @@ public class GraphService implements StorageService {
     
 	public Graph processGraph(String fileName, String dataFormat, String separator) {
 		String pathToFile = location + fileName;
-		Graph graph = ProcessFile.processFile(fileName, dataFormat, separator, pathToFile);
+		Graph graph = ProcessFileService.processFile(fileName, dataFormat, separator, pathToFile);
 		return graph;
 		
 	}
     
 	public String convertGraphToJsonFile(String fileName, Graph graph) {
 		String graphFileName = fileName.substring(0, fileName.indexOf('.')) + ".json";
-		ObjectToJson.convertObjectToJson(location, graphFileName, graph);
+		ObjectToJsonService.convertObjectToJson(location, graphFileName, graph);
 		return graphFileName;		
 	}
 

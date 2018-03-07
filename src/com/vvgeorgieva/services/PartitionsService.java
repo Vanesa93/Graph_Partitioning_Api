@@ -10,8 +10,8 @@ import classic_algorithms.KernighanLinAlgorithm;
 import entity.Graph;
 import entity.VertexGroup;
 import evolutionary_approach.EvolutionaryApproach;
-import helpers.VertexGroupToGraphConverter;
-import jsonConverter.ObjectToJson;
+import helpers.VertexGroupToGraphConverterService;
+import jsonConverter.ObjectToJsonService;
 import naive_approach.NaiveApproach;
 @Service
 public class PartitionsService {
@@ -38,12 +38,12 @@ public class PartitionsService {
     }
     
 	public Graph convertVertexGroupToGraph(VertexGroup vertexGroup) {
-		return VertexGroupToGraphConverter.convertVertexGroupToGraph(vertexGroup);
+		return VertexGroupToGraphConverterService.convertVertexGroupToGraph(vertexGroup);
 	}
     
 	public String convertGraphToJsonFile(String fileName, Graph graph) {
 		String graphFileName = fileName.substring(0, fileName.indexOf('.')) + ".json";
-		ObjectToJson.convertObjectToJson(location, graphFileName, graph);
+		ObjectToJsonService.convertObjectToJson(location, graphFileName, graph);
 		return graphFileName;		
 	}
 	

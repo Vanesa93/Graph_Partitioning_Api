@@ -64,7 +64,7 @@
 			
 			 $("#download-link").click(function() {
 				 sigma.renderers.def = sigma.renderers.canvas;
-				 var sigmaInstance = sigma.instances()[2];
+				 var sigmaInstance = sigma.instances()[0];
 				 sigmaInstance.refresh();
 				 sigmaInstance.renderers[0].snapshot({
 					  format: 'png',
@@ -76,7 +76,7 @@
 				 });
 			 $("#download-link-partition-1").click(function() {
 				 sigma.renderers.def = sigma.renderers.canvas;
-				 var sigmaInstance = sigma.instances()[0];
+				 var sigmaInstance = sigma.instances()[1];
 				 sigmaInstance.refresh();
 				 sigmaInstance.renderers[0].snapshot({
 					  format: 'png',
@@ -88,7 +88,7 @@
 				 });
 			 $("#download-link-partition-2").click(function() {
 				 sigma.renderers.def = sigma.renderers.canvas;
-				 var sigmaInstance = sigma.instances()[1];
+				 var sigmaInstance = sigma.instances()[2];
 				 sigmaInstance.refresh();
 				 sigmaInstance.renderers[0].snapshot({
 					  format: 'png',
