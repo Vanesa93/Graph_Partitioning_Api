@@ -64,6 +64,7 @@ body{
     -webkit-transform: translate3d(-50%, 0, 0);
     -moz-transform: translate3d(-50%, 0, 0);
     transform: translate3d(-50%, 0, 0);
+    cursor: pointer;
 }
 
 		#partition0 {
@@ -112,11 +113,17 @@ input[type=file]{
     padding-bottom: 20px;
     margin-left: 80px;
     outline: none;
+    cursor: pointer;
 }
 
 input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus{
 	outline: none;
 }
+
+input[type=radio]{
+    cursor: pointer;
+}
+
 
 label.error {
     display:inline-block;
