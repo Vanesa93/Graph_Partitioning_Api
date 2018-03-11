@@ -1,5 +1,5 @@
 	<div class="navigation">
-	  <a id="home" class='active' href="/GraphPartitioning/">Home</a>
+	  <a id="home" class='active' href="/GraphPartitioning/">Graph Partitioning</a>
 	  <a id="contact" href="/GraphPartitioning/contact">Contact</a>
 	  <a id="help" href="/GraphPartitioning/help">Help</a>
 	</div>
