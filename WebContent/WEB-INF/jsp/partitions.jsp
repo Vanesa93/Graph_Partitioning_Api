@@ -39,21 +39,7 @@
 		
 	<script>
 		 $(document).ready(function() {
-			 sigma.parsers.json("files/" + "${firstPartitionFileName}", {
-			    container: 'partition' + 0,
-				    settings: {
-	   			      defaultNodeColor: '#203a54',
-	   			   		scalingMode: "inside"
-				    }
-				  });
-			 sigma.parsers.json("files/" + "${secondPartitionFileName}", {
-			    container: 'partition' + 1,
-				    settings: {
-				      defaultNodeColor: '#203a54',
-				      scalingMode: "inside"
-				    }
-				  });
-			 
+		 
 			 sigma.parsers.json("files/" + "${filename}", {
 				    container: 'graph',
 					    settings: {
@@ -61,6 +47,20 @@
 					      scalingMode: "inside"
 					    }
 			});
+			 sigma.parsers.json("files/" + "${firstPartitionFileName}", {
+				    container: 'partition' + 0,
+					    settings: {
+		   			      defaultNodeColor: '#203a54',
+		   			   		scalingMode: "inside"
+					    }
+					  });
+				 sigma.parsers.json("files/" + "${secondPartitionFileName}", {
+				    container: 'partition' + 1,
+					    settings: {
+					      defaultNodeColor: '#203a54',
+					      scalingMode: "inside"
+					    }
+					  });
 			
 			 $("#download-link").click(function() {
 				 sigma.renderers.def = sigma.renderers.canvas;
